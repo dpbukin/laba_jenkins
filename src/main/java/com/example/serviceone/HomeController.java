@@ -17,9 +17,4 @@ public class HomeController {
         return "Single works!";
     }
 
-    @GetMapping("/network")
-    public ResponseEntity<String> networkRequest() {
-        String response = restTemplate.getForObject("http://servicetwo:8081/weather/forecast", String.class);
-        return ResponseEntity.ok(response);
-    }
 }
