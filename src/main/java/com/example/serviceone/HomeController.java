@@ -17,4 +17,9 @@ public class HomeController {
         return "Single works!";
     }
 
+    @GetMapping("/test2")
+    public String test2() {
+        return "Single works2!";
+    }
+
 }
