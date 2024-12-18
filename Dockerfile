@@ -1,5 +1,6 @@
 FROM openjdk:17
 
+USER root
 RUN apt-get update && apt-get install -y maven  && \
        chmod +x /usr/bin/mvn  && \
        chown root:root /usr/bin/mvn
